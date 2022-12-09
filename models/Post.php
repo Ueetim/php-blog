@@ -33,7 +33,7 @@ class Post
                 p.author,
                 p.created_at
             FROM 
-                ' . $this->table . 'p
+                ' . $this->table . ' p
             LEFT JOIN 
                 categories c ON p.category_id = c.id
             ORDER BY
