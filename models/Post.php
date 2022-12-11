@@ -91,6 +91,17 @@ class Post
             $this->author = $row['author'];
             $this->category_id = $row['category_id'];
             $this->category_name = $row['category_name'];
+
+            $post_array = array(
+                'id' => $this->id,
+                'title' => $this->title,
+                'body' => $this->body,
+                'author' => $this->author,
+                'category_id' => $this->category_id,
+                'category_name' => $this->category_name
+            );
+
+            echo json_encode($post_array);
         } else {
             // no posts
             echo json_encode(

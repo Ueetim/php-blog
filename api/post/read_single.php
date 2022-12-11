@@ -19,14 +19,14 @@ $post->id = isset($_GET['id']) ? $_GET['id'] : die(); // if id is set, use. else
 // get post
 $post->read_single();
 
-$post_array = array(
-    'id' => $post->id,
-    'title' => $post->title,
-    'body' => $post->body,
-    'author' => $post->author,
-    'category_id' => $post->category_id,
-    'category_name' => $post->category_name
-);
+// $post_array = array(
+//     'id' => $post->id,
+//     'title' => $post->title,
+//     'body' => $post->body,
+//     'author' => $post->author,
+//     'category_id' => $post->category_id,
+//     'category_name' => $post->category_name
+// );
 
 // convert to json
-print_r(json_encode($post_array));
+// print_r(json_encode($post_array));
